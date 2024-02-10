@@ -1,0 +1,7 @@
+
+services:
+  devcontainer:
+    build: ./workspace/docker
+    tty: true
+    volumes:
+      - ../:/workspace
