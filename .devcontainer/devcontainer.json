@@ -18,5 +18,6 @@
         "ms-toolsai.jupyter"
       ]
     }
-  }
+  },
+  "postCreateCommand": "./.devcontainer/postCreateCommand.sh",
 }
