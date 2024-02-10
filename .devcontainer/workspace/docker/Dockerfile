@@ -18,9 +18,9 @@ RUN apt-get update -y \
   && apt-get clean \
   && rm -rf /var/cache/apt/* /var/lib/apt/lists/
 
-USER $USERNAME
-WORKDIR /home/$USERNAME
-RUN python -m venv .venv
-RUN echo "source /home/$USERNAME/.venv/bin/activate" >> /home/$USERNAME/.bashrc
+# USER $USERNAME
+# WORKDIR /home/$USERNAME
+# RUN python -m venv .venv
+# RUN echo "source /home/$USERNAME/.venv/bin/activate" >> /home/$USERNAME/.bashrc
 
 CMD [ "/bin/bash" ]
